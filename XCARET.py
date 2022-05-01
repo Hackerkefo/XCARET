@@ -2,12 +2,12 @@ import os,platform
 
 comb =platform.architecture()[0]
 
-if name == "main":
- os.system("git pull")
- if comb == "64bit":
-  import("xctate64.so").login()
- elif comb == "32bit":
-  import("xctate32.so").login()
- else:
-  print("UNKNOWN SYSTEM ")
-  exit()
+if __name__ == "__main__":
+	os.system("git pull")
+	if comb == "64bit":
+		__import__("XCARET64").main()
+	elif comb == "32bit":
+		__import__("XCARET32").main()
+	else:
+		print("UNKNOWN SYSTEM ")
+		exit()
