@@ -2,7 +2,7 @@ import os,platform
 
 comb =platform.architecture()[0]
 
-if name == "main":
+if name == "login":
  os.system("git pull")
  if comb == "64bit":
   import("XCARET64").login()
