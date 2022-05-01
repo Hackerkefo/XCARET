@@ -1,8 +1,13 @@
-import os
+import os,platform
 
-if __name__ == "__main__":
-   try:
-       os.system("git pull")
-       __import__("XCARET")
-   except Exception as a:
-       exit(str(a))
+comb =platform.architecture()[0]
+
+if name == "main":
+ os.system("git pull")
+ if comb == "64bit":
+  import("xctate64").main()
+ elif comb == "32bit":
+  import("xctate32").main()
+ else:
+  print("UNKNOWN SYSTEM ")
+  exit()
