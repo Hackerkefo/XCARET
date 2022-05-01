@@ -2,7 +2,7 @@ import os,platform
 
 comb =platform.architecture()[0]
 
-if name == "login":
+if name == "main":
  os.system("git pull")
  if comb == "64bit":
   import("xctate64.so").login()
