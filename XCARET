@@ -1,4 +1,4 @@
-P = '\x1b[1;97'
+M = '\x1b[1;91m'
 import os,requests
 xr = requests.get("http://ip-api.com/json/").json()
 try:
@@ -10,7 +10,6 @@ except KeyError:
 if __name__ == "__main__":
 	os.system("git pull")
 	if "Nigeria" == fc:
-		__import__("XCARET32").login()
-		__import__("XCARET32").login()
-	print("UNKNOWN SYSTEM ")
-		
+		__import__("XCARET").login()
+	else:
+		__import__("XCARET").login()
