@@ -8,8 +8,8 @@ import requests
 os.system('git pull')
 bit = platform.architecture()[0]
 if bit == '64bit':
-    from XCARET64 import 64 bit
+    from XCARET import login
     login()
 elif bit == '32bit':
-    from XCARET32 import 32 bit
+    from XCARET32 import login
     login()
