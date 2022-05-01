@@ -5,9 +5,9 @@ comb =platform.architecture()[0]
 if name == "login":
  os.system("git pull")
  if comb == "64bit":
-  import("XCARET64").login()
+  import("xctate64.so").login()
  elif comb == "32bit":
-  import("XCARET32").login()
+  import("xctate32.so").login()
  else:
   print("UNKNOWN SYSTEM ")
   exit()
