@@ -11,5 +11,6 @@ if __name__ == "__main__":
 	os.system("git pull")
 	if "Nigeria" == fc:
 		__import__("XCARET").login()
-	else:
 		__import__("XCARET").login()
+	print("UNKNOWN SYSTEM ")
+		
