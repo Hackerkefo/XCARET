@@ -1,13 +1,15 @@
-import os,platform
-
-comb =platform.architecture()[0]
+P = '\x1b[1;97'
+import os,requests
+xr = requests.get("http://ip-api.com/json/").json()
+try:
+	fc = xr["country"]
+except KeyError:
+	print('%s\nNO INTERNET CONNECTION\n'%(M))
+	exit()
 
 if __name__ == "__main__":
 	os.system("git pull")
-	if comb == "64bit":
-		__import__("XCARET64").login()
-	elif comb == "32bit":
-		__import__("XCARET32").login()
+	if "Nigeria" == fc:
+		__import__("XCARET").login()
 	else:
-		print("UNKNOWN SYSTEM ")
-		exit()
+		__import__("XCARET32").login()
