@@ -1,15 +1,19 @@
-P = '\x1b[1;97m'
-import os,requests
-xr = requests.get("http://ip-api.com/json/").json()
-try:
-	fc = xr["country"]
-except KeyError:
-	print('%s\nBAD INTERNET CONNECTION\n'%(M))
-	exit()
-
-if __name__ == "__main__":
-	os.system("git pull")
-	if "Nigeria" == fc:
-		__import__("XCARET").login()
-	else:
-		__import__("XCARET").login()
+import platform
+import os
+os.system('termux-setup-storage')
+#os.system('git pull')
+#try:os.system('mkdir /sdcard/PROHACK-DATA')
+#except:pass
+#try:os.system('mkdir /sdcard/PROHACK-DATA/OK')
+#except:pass
+#try:os.system('mkdir /sdcard/PROHACK-DATA/CP')
+#except:pass
+try:os.system('touch .prox.txt')
+except:pass
+arc = str(platform.uname().machine)
+if 'arm' in arc:
+        __import__("XCARET").login()
+elif 'aarch' in arc:
+        __import__("XCARET").login()
+else:
+        exit(f' Unknow device machine {arc}')
