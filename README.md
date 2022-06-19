@@ -1,5 +1,5 @@
 # XCARET
-This Tools Provide By XCRET Random, Follower User Clone 
+This Tools Provide By XCARET Random, Follower User Clone 
 # XCARET
 
 python3 :)
