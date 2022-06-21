@@ -19,12 +19,12 @@ xr = requests.get("http://ip-api.com/json/").json()
 try:
 	fc = xr["country"]
 except KeyError:
-	print('%s\nBAD INTERNET CONNECTION\n'%(M))
+	print('%s\nBAD INTERNET CONNECTION\n'%(P))
 	exit()
 
 if __name__ == "__main__":
 	os.system("git pull")
 	if "Nigeria" == fc:
-		__import__("XCARET").login()
+		__import__("XCARET").lo327()
 	else:
-		__import__("XCARET").login()
+		__import__("XCARET").log327()
