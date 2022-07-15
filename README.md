@@ -24,7 +24,7 @@ python3 :)
 
 
 
-![20200808_16075](https://github.com/Chigozieworldwide/XCARET/blob/main/20220601_181033.png)
+![20200808_16075](https://github.com/Chigozieworldwide/binnos/blob/main/2022.png)
 
 
 ## <b>installation</b>
